@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinhos de compras</title>
+     <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body>
+    <header>
+         <h1>Minha loja virtual</h1>
+    </header>
+ main>
+    <section id="produtos"></section>
+
+    <aside id="carrinho">
+      <h2>Carrinho</h2>
+      <ul id="itens-carrinho"></ul>
+      <p id="total">Total: R$ 0,00</p>
+      <button id="finalizar">Finalizar Compra</button>
+    </aside>
+  </main>
+
+  <section id="entrega">
+    <h3>Calcular rota de entrega</h3>
+    <label>Digite seu CEP:</label>
+    <input type="text" id="cep" placeholder="Ex: 01001-000">
+    <button id="buscarCEP">Buscar</button>
+
+    <div id="mapa"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
